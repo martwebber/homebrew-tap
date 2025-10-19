@@ -5,15 +5,15 @@
 class MpesaCli < Formula
   desc "A command-line interface for M-Pesa API operations"
   homepage "https://github.com/martwebber/mpesa-cli"
-  version "1.0.23"
+  version "1.1.0"
   license "MIT"
 
   depends_on "go" => :optional
   depends_on :linux
 
   if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-    url "https://github.com/martwebber/mpesa-cli/releases/download/v1.0.23/mpesa-cli_Linux_x86_64.tar.gz"
-    sha256 "daa60450368a44d865213946c5990347ad2ee53287b7b20b769685b95a41bb0d"
+    url "https://github.com/martwebber/mpesa-cli/releases/download/v1.1.0/mpesa-cli_Linux_x86_64.tar.gz"
+    sha256 "26b3e8e938105927c90bcc1bf66fa4257c9aa4e7b23b0cde62828305ea14d333"
     def install
       bin.install "mpesa-cli"
 
@@ -24,8 +24,8 @@ class MpesaCli < Formula
     end
   end
   if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/martwebber/mpesa-cli/releases/download/v1.0.23/mpesa-cli_Linux_armv6.tar.gz"
-    sha256 "cd2f7a5500610f1adeafb0ba128354ab88269f0c8953fb8cc2e4f869566d9c89"
+    url "https://github.com/martwebber/mpesa-cli/releases/download/v1.1.0/mpesa-cli_Linux_armv6.tar.gz"
+    sha256 "201676790cdcb3475c87e082f233b668d2cbac12fc20e981abecff884be4143b"
     def install
       bin.install "mpesa-cli"
 
@@ -36,8 +36,8 @@ class MpesaCli < Formula
     end
   end
   if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/martwebber/mpesa-cli/releases/download/v1.0.23/mpesa-cli_Linux_arm64.tar.gz"
-    sha256 "be0424418b4e25b3f73f7cb7c36a5afe280bdab2f22ee9f9a1c3f9c9b9260989"
+    url "https://github.com/martwebber/mpesa-cli/releases/download/v1.1.0/mpesa-cli_Linux_arm64.tar.gz"
+    sha256 "e1ba682e1b35463479eadc632513f8c3c464f81bcb9b53ad7fd8a7ce5b66d48b"
     def install
       bin.install "mpesa-cli"
 
